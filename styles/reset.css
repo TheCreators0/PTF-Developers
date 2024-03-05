@@ -1,0 +1,53 @@
+/* Reset CSS for Team Portfolio */
+
+/* Box sizing border-box reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default margin and padding on the body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin on headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Remove default text-decoration on links */
+a {
+  text-decoration: none;
+}
+
+/* Set default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Set default line-height */
+p {
+  line-height: 1.5;
+}
+
+/* Remove default outline style */
+:focus {
+  outline: none;
+}

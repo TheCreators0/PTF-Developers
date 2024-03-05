@@ -1,0 +1,16 @@
+
+
+:root{
+    /*Paleta do projeto*/
+    --cor_nav: #1179DB;
+    --cor_main_team: #46C2DB;
+    --cor_main_augusto: #5846DB;
+    --cor_main_pedro: #4693DB;
+    --cor_main_joao: #4664DB;
+    --cor_main_dark: black;
+    --cor_main_claro: white;
+    /*Fontes usadas*/
+
+    --font_principal:"Madimi One", sans-serif;
+    --fot_team: "Roboto Mono", monospace;
+}
