@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -11,4 +13,139 @@ body{
     width: 1200px;
     background-color: var(--cor_main_claro);
     font-family: var(--font_principal);
+}
+
+/*meu lateral*/
+
+.menu-lateral{
+    width: 300px;
+    height: 100vh;
+
+    padding: 40px 0 40px 1%;
+
+    background-color: var(--cor_nav);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+    
+}
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+.btn-expandir>img{
+    color: var(--cor_main_claro);
+    font-size: 24px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu :hover{
+    background-color: white;
+    border-radius: 50px 0px 0px 50px;
+}
+ul li.item-menu{
+    transition: .1s;
+}
+ul li.item-menu > a:hover{
+    color: var(--cor_nav);
+}
+
+ul li.item-menu > a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+    padding: 20px 4%;
+
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu > a .txt-link{
+    margin-left: 40px;
+
+}
+
+ul li.item-menu > a .icon > img{
+    font-size: 30px;
+}
+
+/*menu fixo no topo*/
+
+.container-1{
+    position: fixed;
+    top: 0;
+    width: 980px;
+    height: 50px;
+
+    margin-left: 300px;
+
+    background-color: var(--cor_nav);
+    color: var(--cor_main_claro);
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container-1>h1{
+    margin-left: 30px;
+    margin-top: 0;
+}
+
+.container-1 .team{
+    margin-left: 100px;
+    margin-right: 600px;
+
+    background-color: var(--cor_nav);
+    border: none;
+    font-family: var(--font_team);
+    color: var(--cor_main_claro);
+    font-size: 20px;
+}
+.container-1>a{
+    margin-top: -40px;
+    margin-left: 580px;
+    margin-right: 200px;
+    text-decoration: none;
+    color: var(--cor_main_claro);
+}
+/*roda-pé ou footer mesmo ksksksks */
+
+footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+   width: 100%;
+   height: 60px;
+   background-color: var(--cor_nav);
+
+   position: fixed;
+   top: 539px;
+}
+footer>span>p{
+    line-height: 24px;
+}
+footer>span>a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: var(--cor_main_claro);
+    padding: 10px;
+    margin: 5px;
+}
+footer>span>a :hover{
+    background-color: var(--cor_main_claro);
+    color: var(--cor_nav);
+    border-radius: 4px ;
 }
