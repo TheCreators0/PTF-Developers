@@ -18,17 +18,22 @@ body{
 /*meu lateral*/
 
 .menu-lateral{
-    width: 300px;
+    width: 80px;
     height: 100vh;
 
-    padding: 40px 0 40px 1%;
+    padding: 5px 0 40px 1%;
 
     background-color: var(--cor_nav);
 
   position: fixed;
   top: 0;
   left: 0;
-    
+
+ overflow: hidden;
+}
+.menu-lateral :hover{
+    width: 300px;
+    background-color: var(--cor_nav);
 }
 .btn-expandir{
     width: 100%;
@@ -50,6 +55,9 @@ ul li.item-menu :hover{
 ul li.item-menu{
     transition: .1s;
 }
+ul li .ativo{
+    background-color: var(--cor_main_claro);
+}
 ul li.item-menu > a:hover{
     color: var(--cor_nav);
 }
@@ -68,11 +76,11 @@ ul li.item-menu > a{
 
 ul li.item-menu > a .txt-link{
     margin-left: 40px;
-
 }
 
 ul li.item-menu > a .icon > img{
     font-size: 30px;
+    margin-left: 10px;
 }
 
 /*menu fixo no topo*/
@@ -80,10 +88,10 @@ ul li.item-menu > a .icon > img{
 .container-1{
     position: fixed;
     top: 0;
-    width: 980px;
+    width: 1200px;
     height: 50px;
 
-    margin-left: 300px;
+    margin-left: 80px;
 
     background-color: var(--cor_nav);
     color: var(--cor_main_claro);
@@ -112,7 +120,7 @@ ul li.item-menu > a .icon > img{
 }
 .container-1>a{
     margin-top: -40px;
-    margin-left: 580px;
+    margin-left: 630px;
     margin-right: 200px;
     text-decoration: none;
     color: var(--cor_main_claro);
